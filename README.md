@@ -1,27 +1,47 @@
-# AutocompleteLibrairy
+# community-ion-autocomplete
+## Ionic 7 Angular 16
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+community-ion-autocomplete is a Ionic 7 Angular 16 library. It's a dropdown that opens in a modal with searchbar.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+```bash
+npm install community-ion-autocomplete
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+```ts
+import { CommunityIonAutocompleteModule } from 'community-ion-autocomplete';
+import { NgModule} from '@angular/core';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  imports: [
+    ...
+    CommunityIonAutocompleteModule
+  ],
 
-## Running unit tests
+})
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# .ts
+public municipalities = {};
 
-## Running end-to-end tests
+# .html
+<community-ion-autocomplete [items]="items" [(selectedItem)]="model"></community-ion-autocomplete>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
 
-## Further help
+# Properties
+- items: Array<Object> => 
+   - [{value: string})]
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- selectedItem: Object || Array<Object> => (ngModel)
+   - value: string
+
+- title (optional): string => (name of label input)
+    default : ''
+
+- mutiple (optional): boolean => (select several items)
+    default : false
+
