@@ -25,7 +25,9 @@ import { NgModule} from '@angular/core';
 })
 
 # .ts
-public municipalities = {};
+public model = {};
+public item = [{name:'Community'},{name:'Ion'},{name:'Autocomplete'}];
+
 
 # .html
 <community-ion-autocomplete [items]="items" [(selectedItem)]="model"></community-ion-autocomplete>
@@ -34,7 +36,7 @@ public municipalities = {};
 
 # Properties
 - items: Array<Object> => 
-   - [{value: string})]
+   - [{name: string})]
 
 - selectedItem: Object || Array<Object> => (ngModel)
    - value: string

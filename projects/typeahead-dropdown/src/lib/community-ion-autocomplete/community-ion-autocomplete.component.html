@@ -4,7 +4,6 @@
       [value]="selectedItems?.length ? (selectedItems | mapName: 'value') : (selectedItems?.value ? selectedItems.value : '')"></ion-input>
     <ion-icon name="chevron-down-outline"></ion-icon>
   </ion-item>
-
 </div>
 
 <ion-modal [trigger]="'select-'+uuid" #modal class="modal-window">

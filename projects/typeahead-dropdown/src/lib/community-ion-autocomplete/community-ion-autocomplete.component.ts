@@ -32,19 +32,7 @@ export class CommunityIonAutocompleteComponent {
   @Output() selectionChange = new EventEmitter<
     Array<Record<string, any>> | Record<string, any>
   >();
-  // modelValue: any;
 
-  // @Input()
-  // get model() {
-  //      return this.modelValue;
-  // }
-
-  // set model(value: any) {
-  //   this.modelValue = value;
-  //   this.modelChange.emit(this.modelValue);
-  // }
-
-  // @Output() modelChange: EventEmitter<any> = new EventEmitter<any>();
   @Output() onBlur: EventEmitter<any> = new EventEmitter<any>();
 
   @Input() obj: any;
