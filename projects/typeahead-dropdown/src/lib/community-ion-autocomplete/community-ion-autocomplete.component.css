@@ -1,0 +1,37 @@
+.position_bottom {
+  position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  bottom: 30px;
+
+}
+
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.position_bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.w_80 {
+  width: 80%;
+}
+
+.bg_transparent {
+  background: transparent;
+}
+
+.--bg_transparent {
+  --background: transparent
+ }
+
+ ion-modal.modal-window {
+  --width: 90% !important;
+  --height: 90% !important;
+}
+
+

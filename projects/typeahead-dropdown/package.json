@@ -1,0 +1,23 @@
+{
+  "name": "community-ion-autocomplete",
+  "version": "0.0.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/F-r-e-d/community-ion-autocomplete"
+  },
+  "peerDependencies": {
+    "@angular/common": "^16.1.0",
+    "@angular/core": "^16.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@ionic/angular": "^7.1.1",
+    "@types/lodash": "^4.14.195",
+    "@types/uuid": "^9.0.2",
+    "lodash.clonedeep": "^4.5.0",
+    "uuid": "^9.0.0"
+  }
+}
